@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace LibraryManagementSystemProject
 {
-    public partial class Welcome : Form
+    public partial class SearchInterface : Form
     {
-        public Welcome()
+        public SearchInterface()
         {
             InitializeComponent();
         }
-        private void LoadForm()
-        {
-
-        }
-        
     }
 }
