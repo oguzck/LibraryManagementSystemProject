@@ -58,6 +58,7 @@ namespace LibraryManagementSystemProject
             this.btnBorrowedBooks.TabIndex = 2;
             this.btnBorrowedBooks.Text = "Barrowed Books";
             this.btnBorrowedBooks.UseVisualStyleBackColor = true;
+            this.btnBorrowedBooks.Click += new System.EventHandler(this.btnBorrowedBooks_Click);
             // 
             // btnAdminPanel
             // 
@@ -67,6 +68,7 @@ namespace LibraryManagementSystemProject
             this.btnAdminPanel.TabIndex = 1;
             this.btnAdminPanel.Text = "Admin Panel";
             this.btnAdminPanel.UseVisualStyleBackColor = true;
+            this.btnAdminPanel.Click += new System.EventHandler(this.btnAdminPanel_Click);
             // 
             // btnSearch
             // 
@@ -76,6 +78,7 @@ namespace LibraryManagementSystemProject
             this.btnSearch.TabIndex = 0;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // pnlMain
             // 
