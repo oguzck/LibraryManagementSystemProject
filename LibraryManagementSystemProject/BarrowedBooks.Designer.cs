@@ -1,7 +1,7 @@
 ﻿
 namespace LibraryManagementSystemProject
 {
-    partial class AdminPage
+    partial class BarrowedBooks
     {
         /// <summary>
         /// Required designer variable.
@@ -31,14 +31,14 @@ namespace LibraryManagementSystemProject
         {
             this.SuspendLayout();
             // 
-            // AdminPage
+            // BarrowedBooks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(775, 499);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "AdminPage";
-            this.Text = "AdminPage";
+            this.Name = "BarrowedBooks";
+            this.Text = "BarrowedBooks";
             this.ResumeLayout(false);
 
         }

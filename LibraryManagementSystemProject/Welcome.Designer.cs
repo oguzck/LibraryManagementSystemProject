@@ -52,7 +52,7 @@ namespace LibraryManagementSystemProject
             // 
             // btnBorrowedBooks
             // 
-            this.btnBorrowedBooks.Location = new System.Drawing.Point(12, 303);
+            this.btnBorrowedBooks.Location = new System.Drawing.Point(12, 202);
             this.btnBorrowedBooks.Name = "btnBorrowedBooks";
             this.btnBorrowedBooks.Size = new System.Drawing.Size(125, 23);
             this.btnBorrowedBooks.TabIndex = 2;
@@ -61,7 +61,7 @@ namespace LibraryManagementSystemProject
             // 
             // btnAdminPanel
             // 
-            this.btnAdminPanel.Location = new System.Drawing.Point(12, 208);
+            this.btnAdminPanel.Location = new System.Drawing.Point(12, 283);
             this.btnAdminPanel.Name = "btnAdminPanel";
             this.btnAdminPanel.Size = new System.Drawing.Size(125, 23);
             this.btnAdminPanel.TabIndex = 1;
@@ -70,7 +70,7 @@ namespace LibraryManagementSystemProject
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(12, 111);
+            this.btnSearch.Location = new System.Drawing.Point(12, 127);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(125, 23);
             this.btnSearch.TabIndex = 0;
