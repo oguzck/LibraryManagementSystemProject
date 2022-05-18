@@ -38,14 +38,14 @@ namespace LibraryManagementSystemProject
         public async Task FillWithMatchingRecords()
         {
             var keyType = txtKey.GetType();
-            var bsonQuery = "{'Details.a':{$elemMatch:{$elemMatch:{DeviceName :"''txtKey.Text" /.*Name0.*/}}}}";
+                // var bsonQuery = "{'Details.a':{$elemMatch:{$elemMatch:{DeviceName :"''txtKey.Text" /.*Name0.*/}}}}";
             var bsonQuer2 = "{'LibraryInformation.Book':{$elemMatch:{$elemMatch:{Title: /.*Dev.*/}}}}";
-            var filter = MongoDB.Bson.Serialization.BsonSerializer.Deserialize<BsonDocument>(bsonQuery);
+           // var filter = MongoDB.Bson.Serialization.BsonSerializer.Deserialize<BsonDocument>(bsonQuery);
 
             
         
 
-        var result = m_Collection.FindSync(filter).ToList();
+        //var result = m_Collection.FindSync(filter).ToList();
 
             var documents = await m_Collection.Find(_ => true).ToListAsync();
             foreach (var book in documents)
