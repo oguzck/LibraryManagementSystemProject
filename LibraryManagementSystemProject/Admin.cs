@@ -10,8 +10,8 @@ namespace LibraryManagementSystemProject
     class Admin
     {
         public ObjectId _id { get; set; }
-        public String Name { get; set; }
-        public String Surname { get; set; }
+        //public String Name { get; set; }
+        //public String Surname { get; set; }
         public String Username { get; set; }
         public String Password { get; set; }
 
