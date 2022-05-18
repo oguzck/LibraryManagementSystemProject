@@ -15,18 +15,14 @@ namespace LibraryManagementSystemProject
     public partial class AdminPage : Form
     {
 
-        static MongoClient m_Client;
-        static IMongoDatabase m_Database;
-        static IMongoCollection<Admin> m_Collection;
+        static MongoClient m_Client = new MongoClient("mongodb+srv://ozikill123:4584@maincluster.kfxqf.mongodb.net/?retryWrites=true&w=majority");
+        static IMongoDatabase m_Database = m_Client.GetDatabase("LibraryInformation");
+        static IMongoCollection<Admin> m_Collection = m_Database.GetCollection<Admin>("Admins");
 
         public AdminPage()
         {
             InitializeComponent();
-            m_Client = new MongoClient("mongodb+srv://ozikill123:4584@maincluster.kfxqf.mongodb.net/?retryWrites=true&w=majority");
-            m_Database = m_Client.GetDatabase("LibraryInformation");
-            m_Collection = m_Database.GetCollection<Admin>("Admins");
-            
-
+           
            // Admin admin = new Admin();
                //admin.Name = "OğuzCan";
                 //admin.Surname = "Kılıçkaya";
