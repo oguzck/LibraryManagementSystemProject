@@ -35,23 +35,36 @@ namespace LibraryManagementSystemProject
              //admin._id = new ObjectId();
            // m_Collection.InsertOne(admin);
         }
+        public void loadForm(UserControl Uc)
+        {
+            Uc = new UserControl();
+            
+            Uc.Dock = DockStyle.Fill;
+            this.pnlMain.Controls.Add(Uc);
+            this.pnlMain.Tag = Uc;
+            Uc.Show();
+        }
+
         public async Task LoginAsync()
         {
             var documents = await m_Collection.Find(_ => true).ToListAsync();
             foreach (var admname in documents)
             {
                 if (admname.Password == txtPassword.Text && admname.Username == txtUsername.Text)
+                {
                     MessageBox.Show("giriş başarılı");
+                    loadForm(new InsertDeleteUpdate());
+                }
+                    
+                    
                 else
                 {
                     MessageBox.Show("giriş başarısız");
                 }
             }
         }
-    
-        
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void btnLogin_Click_1(object sender, EventArgs e)
         {
             LoginAsync();
         }
