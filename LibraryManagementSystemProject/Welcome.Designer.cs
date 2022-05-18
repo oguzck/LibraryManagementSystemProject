@@ -47,7 +47,7 @@ namespace LibraryManagementSystemProject
             this.pnlSideBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlSideBar.Location = new System.Drawing.Point(0, 0);
             this.pnlSideBar.Name = "pnlSideBar";
-            this.pnlSideBar.Size = new System.Drawing.Size(156, 499);
+            this.pnlSideBar.Size = new System.Drawing.Size(156, 617);
             this.pnlSideBar.TabIndex = 0;
             // 
             // btnBorrowedBooks
@@ -85,7 +85,7 @@ namespace LibraryManagementSystemProject
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMain.Location = new System.Drawing.Point(156, 0);
             this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(775, 499);
+            this.pnlMain.Size = new System.Drawing.Size(967, 617);
             this.pnlMain.TabIndex = 1;
             // 
             // pnlTopbar
@@ -94,14 +94,14 @@ namespace LibraryManagementSystemProject
             this.pnlTopbar.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTopbar.Location = new System.Drawing.Point(156, 0);
             this.pnlTopbar.Name = "pnlTopbar";
-            this.pnlTopbar.Size = new System.Drawing.Size(775, 60);
+            this.pnlTopbar.Size = new System.Drawing.Size(967, 60);
             this.pnlTopbar.TabIndex = 2;
             // 
             // Welcome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(931, 499);
+            this.ClientSize = new System.Drawing.Size(1123, 617);
             this.Controls.Add(this.pnlTopbar);
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.pnlSideBar);

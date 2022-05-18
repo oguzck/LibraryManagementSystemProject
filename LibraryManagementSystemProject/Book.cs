@@ -16,9 +16,9 @@ namespace LibraryManagementSystemProject
         public DateTime PublishYear { get; set; }
         public String Title { get; set; }
         public String Language { get; set; }
-        public ObjectId Publisher_Id { get; set; }
-        public ObjectId Author_Id { get; set; }
-        public ObjectId Editor_Id { get; set; }
+        public String PublisherName { get; set; }
+        public String AuthorName { get; set; }
+        public String EditorName { get; set; }
         public int StockCount { get; set; }
     }
 }

@@ -50,13 +50,13 @@ namespace LibraryManagementSystemProject
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMain.Location = new System.Drawing.Point(0, 0);
             this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(775, 499);
+            this.pnlMain.Size = new System.Drawing.Size(967, 617);
             this.pnlMain.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(359, 104);
+            this.label1.Location = new System.Drawing.Point(424, 130);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 15);
             this.label1.TabIndex = 11;
@@ -64,7 +64,7 @@ namespace LibraryManagementSystemProject
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(405, 351);
+            this.btnLogin.Location = new System.Drawing.Point(470, 377);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(78, 20);
@@ -75,7 +75,7 @@ namespace LibraryManagementSystemProject
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(340, 273);
+            this.txtPassword.Location = new System.Drawing.Point(405, 299);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
@@ -86,7 +86,7 @@ namespace LibraryManagementSystemProject
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPassword.Location = new System.Drawing.Point(210, 273);
+            this.lblPassword.Location = new System.Drawing.Point(275, 299);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(79, 21);
             this.lblPassword.TabIndex = 8;
@@ -94,7 +94,7 @@ namespace LibraryManagementSystemProject
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(340, 228);
+            this.txtUsername.Location = new System.Drawing.Point(405, 254);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(144, 23);
@@ -104,7 +104,7 @@ namespace LibraryManagementSystemProject
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblUsername.Location = new System.Drawing.Point(203, 228);
+            this.lblUsername.Location = new System.Drawing.Point(268, 254);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(84, 21);
             this.lblUsername.TabIndex = 6;
@@ -114,7 +114,7 @@ namespace LibraryManagementSystemProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(775, 499);
+            this.ClientSize = new System.Drawing.Size(967, 617);
             this.Controls.Add(this.pnlMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdminPage";
