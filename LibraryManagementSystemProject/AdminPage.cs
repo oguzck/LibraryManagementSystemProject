@@ -35,14 +35,15 @@ namespace LibraryManagementSystemProject
              //admin._id = new ObjectId();
            // m_Collection.InsertOne(admin);
         }
-        public void loadForm(UserControl Uc)
+        public void loadForm(UserControl userControl)
         {
-            Uc = new UserControl();
-            
-            Uc.Dock = DockStyle.Fill;
-            this.pnlMain.Controls.Add(Uc);
-            this.pnlMain.Tag = Uc;
-            Uc.Show();
+
+            userControl.Dock = DockStyle.Fill;
+            pnlMain.Controls.Clear();
+            pnlMain.Controls.Add(userControl);
+            userControl.BringToFront();
+
+
         }
 
         public async Task LoginAsync()
