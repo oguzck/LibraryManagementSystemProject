@@ -55,6 +55,9 @@ namespace LibraryManagementSystemProject
             this.label11 = new System.Windows.Forms.Label();
             this.dtpPublishYear = new System.Windows.Forms.DateTimePicker();
             this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtObjectId = new System.Windows.Forms.TextBox();
+            this.btnClear = new System.Windows.Forms.Button();
             btnInsert = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -62,12 +65,13 @@ namespace LibraryManagementSystemProject
             // btnInsert
             // 
             btnInsert.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            btnInsert.Location = new System.Drawing.Point(134, 289);
+            btnInsert.Location = new System.Drawing.Point(320, 287);
             btnInsert.Name = "btnInsert";
             btnInsert.Size = new System.Drawing.Size(144, 25);
             btnInsert.TabIndex = 7;
             btnInsert.Text = "Insert";
             btnInsert.UseVisualStyleBackColor = true;
+            btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // dataGridView1
             // 
@@ -86,7 +90,7 @@ namespace LibraryManagementSystemProject
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(134, 104);
+            this.label1.Location = new System.Drawing.Point(134, 146);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label1.Size = new System.Drawing.Size(38, 15);
@@ -96,7 +100,7 @@ namespace LibraryManagementSystemProject
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(134, 146);
+            this.label2.Location = new System.Drawing.Point(134, 188);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label2.Size = new System.Drawing.Size(53, 15);
@@ -106,7 +110,7 @@ namespace LibraryManagementSystemProject
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(158, 187);
+            this.label3.Location = new System.Drawing.Point(158, 229);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label3.Size = new System.Drawing.Size(0, 15);
@@ -114,33 +118,34 @@ namespace LibraryManagementSystemProject
             // 
             // txtTitle
             // 
-            this.txtTitle.Location = new System.Drawing.Point(205, 101);
+            this.txtTitle.Location = new System.Drawing.Point(205, 143);
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.Size = new System.Drawing.Size(155, 23);
             this.txtTitle.TabIndex = 4;
             // 
             // txtAuthor
             // 
-            this.txtAuthor.Location = new System.Drawing.Point(205, 143);
+            this.txtAuthor.Location = new System.Drawing.Point(205, 185);
             this.txtAuthor.Name = "txtAuthor";
             this.txtAuthor.Size = new System.Drawing.Size(155, 23);
             this.txtAuthor.TabIndex = 5;
             // 
             // txtPublisher
             // 
-            this.txtPublisher.Location = new System.Drawing.Point(205, 184);
+            this.txtPublisher.Location = new System.Drawing.Point(205, 226);
             this.txtPublisher.Name = "txtPublisher";
             this.txtPublisher.Size = new System.Drawing.Size(155, 23);
             this.txtPublisher.TabIndex = 6;
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(433, 289);
+            this.btnUpdate.Location = new System.Drawing.Point(523, 287);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(144, 25);
             this.btnUpdate.TabIndex = 8;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -150,11 +155,12 @@ namespace LibraryManagementSystemProject
             this.btnDelete.TabIndex = 9;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(134, 234);
+            this.label4.Location = new System.Drawing.Point(376, 234);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(41, 15);
             this.label4.TabIndex = 10;
@@ -162,9 +168,9 @@ namespace LibraryManagementSystemProject
             // 
             // txtISBN
             // 
-            this.txtISBN.Location = new System.Drawing.Point(205, 231);
+            this.txtISBN.Location = new System.Drawing.Point(460, 226);
             this.txtISBN.Name = "txtISBN";
-            this.txtISBN.Size = new System.Drawing.Size(155, 23);
+            this.txtISBN.Size = new System.Drawing.Size(144, 23);
             this.txtISBN.TabIndex = 11;
             // 
             // label5
@@ -259,7 +265,7 @@ namespace LibraryManagementSystemProject
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(134, 187);
+            this.label11.Location = new System.Drawing.Point(134, 229);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(65, 15);
             this.label11.TabIndex = 24;
@@ -282,10 +288,40 @@ namespace LibraryManagementSystemProject
             this.label12.TabIndex = 26;
             this.label12.Text = "Admin Panel";
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(134, 104);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(26, 15);
+            this.label13.TabIndex = 27;
+            this.label13.Text = "Id : ";
+            // 
+            // txtObjectId
+            // 
+            this.txtObjectId.Location = new System.Drawing.Point(205, 101);
+            this.txtObjectId.Name = "txtObjectId";
+            this.txtObjectId.ReadOnly = true;
+            this.txtObjectId.Size = new System.Drawing.Size(155, 23);
+            this.txtObjectId.TabIndex = 28;
+            // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(134, 289);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(142, 23);
+            this.btnClear.TabIndex = 29;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
             // InsertDeleteUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.txtObjectId);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.dtpPublishYear);
             this.Controls.Add(this.label11);
@@ -349,5 +385,8 @@ namespace LibraryManagementSystemProject
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.DateTimePicker dtpPublishYear;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txtObjectId;
+        private System.Windows.Forms.Button btnClear;
     }
 }
