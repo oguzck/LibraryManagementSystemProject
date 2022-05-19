@@ -39,7 +39,7 @@ namespace LibraryManagementSystemProject
             // 
             this.lblKey.AutoSize = true;
             this.lblKey.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblKey.Location = new System.Drawing.Point(333, 99);
+            this.lblKey.Location = new System.Drawing.Point(387, 144);
             this.lblKey.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblKey.Name = "lblKey";
             this.lblKey.Size = new System.Drawing.Size(134, 32);
@@ -48,7 +48,7 @@ namespace LibraryManagementSystemProject
             // 
             // txtKey
             // 
-            this.txtKey.Location = new System.Drawing.Point(514, 99);
+            this.txtKey.Location = new System.Drawing.Point(568, 144);
             this.txtKey.Name = "txtKey";
             this.txtKey.Size = new System.Drawing.Size(374, 31);
             this.txtKey.TabIndex = 1;
@@ -59,12 +59,12 @@ namespace LibraryManagementSystemProject
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(295, 230);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 230);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(836, 557);
+            this.dataGridView1.Size = new System.Drawing.Size(1391, 557);
             this.dataGridView1.TabIndex = 3;
             // 
             // SearchInterface

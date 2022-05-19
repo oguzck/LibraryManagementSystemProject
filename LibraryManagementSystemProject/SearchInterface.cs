@@ -38,42 +38,30 @@ namespace LibraryManagementSystemProject
         public async Task FillWithMatchingRecords()
         {
             var keyType = txtKey.GetType();
-            var bsonQuery = "{'Details.a':{$elemMatch:{$elemMatch:{DeviceName :"''txtKey.Text" /.*Name0.*/}}}}";
-            var bsonQuer2 = "{'LibraryInformation.Book':{$elemMatch:{$elemMatch:{Title: /.*Dev.*/}}}}";
-            var filter = MongoDB.Bson.Serialization.BsonSerializer.Deserialize<BsonDocument>(bsonQuery);
-
-            
-        
-
-        var result = m_Collection.FindSync(filter).ToList();
-
+           
+            List<Book> bookList = new List<Book>();
             var documents = await m_Collection.Find(_ => true).ToListAsync();
             foreach (var book in documents)
             {
-                
-                    if (book.ISBN.ToString() == txtKey.Text || book.Edition.ToString() == txtKey.Text || book.PageCount.ToString() == txtKey.Text)
+                if (txtKey.Text == "")
                 {
-                    MessageBox.Show("giriş başarılı");
+                    bookList = m_Collection.AsQueryable().ToList<Book>();
+                    dataGridView1.DataSource = bookList;
                 }
-
-
                 else
                 {
-                    MessageBox.Show("giriş başarısız");
+                    if (book.ISBN.ToString() == txtKey.Text || book.Edition.ToString() == txtKey.Text || book.PageCount.ToString() == txtKey.Text || book.Title.ToString() == txtKey.Text ||
+                   book.PublishYear.Year.ToString() == txtKey.Text || book.Language.ToString() == txtKey.Text || book.PublisherName.ToString() == txtKey.Text ||
+                   book.AuthorName.ToString() == txtKey.Text || book.EditorName.ToString() == txtKey.Text || book.StockCount.ToString() == txtKey.Text)
+                    {
+                        bookList.Add(book);
+                    }
                 }
+                
             }
-            //public int ISBN { get; set; }
-            //public int Edition { get; set; }
-            //public int PageCount { get; set; }
-            //public DateTime PublishYear { get; set; }
-            //public String Title { get; set; }
-            //public String Language { get; set; }
-            //public String PublisherName { get; set; }
-            //public String AuthorName { get; set; }
-            //public String EditorName { get; set; }
-            //public int StockCount { get; set; }
+            dataGridView1.DataSource = bookList;
+
         }
-      
-        
+       
     }
 }
