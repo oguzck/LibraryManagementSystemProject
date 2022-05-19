@@ -62,6 +62,20 @@ namespace LibraryManagementSystemProject
             dataGridView1.DataSource = bookList;
 
         }
-       
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnBorrow.Enabled = true;
+        }
+
+        private void btnBorrow_Click(object sender, EventArgs e)
+        {
+            int rowindex = dataGridView1.CurrentCell.RowIndex;
+            string ISBN = dataGridView1.Rows[rowindex].Cells[1].Value.ToString();
+
+            BorrowBook borrowBook = new BorrowBook(ISBN);
+            borrowBook.Show();
+            this.Hide();
+        }
     }
 }

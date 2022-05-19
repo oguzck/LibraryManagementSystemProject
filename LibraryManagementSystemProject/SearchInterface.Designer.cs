@@ -32,6 +32,7 @@ namespace LibraryManagementSystemProject
             this.lblKey = new System.Windows.Forms.Label();
             this.txtKey = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnBorrow = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,14 +65,27 @@ namespace LibraryManagementSystemProject
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(1391, 557);
+            this.dataGridView1.Size = new System.Drawing.Size(1391, 425);
             this.dataGridView1.TabIndex = 3;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // btnBorrow
+            // 
+            this.btnBorrow.Enabled = false;
+            this.btnBorrow.Location = new System.Drawing.Point(568, 685);
+            this.btnBorrow.Name = "btnBorrow";
+            this.btnBorrow.Size = new System.Drawing.Size(209, 51);
+            this.btnBorrow.TabIndex = 4;
+            this.btnBorrow.Text = "Borrow";
+            this.btnBorrow.UseVisualStyleBackColor = true;
+            this.btnBorrow.Click += new System.EventHandler(this.btnBorrow_Click);
             // 
             // SearchInterface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1415, 832);
+            this.Controls.Add(this.btnBorrow);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtKey);
             this.Controls.Add(this.lblKey);
@@ -90,5 +104,6 @@ namespace LibraryManagementSystemProject
         private System.Windows.Forms.Label lblKey;
         private System.Windows.Forms.TextBox txtKey;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnBorrow;
     }
 }
