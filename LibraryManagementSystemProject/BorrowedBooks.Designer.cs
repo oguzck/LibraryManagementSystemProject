@@ -1,7 +1,7 @@
 ﻿
 namespace LibraryManagementSystemProject
 {
-    partial class SearchInterface
+    partial class BorrowedBooks
     {
         /// <summary>
         /// Required designer variable.
@@ -29,70 +29,69 @@ namespace LibraryManagementSystemProject
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblKey = new System.Windows.Forms.Label();
-            this.txtKey = new System.Windows.Forms.TextBox();
+            this.btnDeliver = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnBorrow = new System.Windows.Forms.Button();
+            this.txtKey = new System.Windows.Forms.TextBox();
+            this.lblKey = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblKey
+            // btnDeliver
             // 
-            this.lblKey.AutoSize = true;
-            this.lblKey.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblKey.Location = new System.Drawing.Point(387, 144);
-            this.lblKey.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblKey.Name = "lblKey";
-            this.lblKey.Size = new System.Drawing.Size(134, 32);
-            this.lblKey.TabIndex = 0;
-            this.lblKey.Text = "Search key:";
-            this.lblKey.Click += new System.EventHandler(this.lblKey_Click);
-            // 
-            // txtKey
-            // 
-            this.txtKey.Location = new System.Drawing.Point(568, 144);
-            this.txtKey.Name = "txtKey";
-            this.txtKey.Size = new System.Drawing.Size(374, 31);
-            this.txtKey.TabIndex = 1;
-            this.txtKey.TextChanged += new System.EventHandler(this.txtKey_TextChanged);
+            this.btnDeliver.Location = new System.Drawing.Point(796, 662);
+            this.btnDeliver.Name = "btnDeliver";
+            this.btnDeliver.Size = new System.Drawing.Size(209, 51);
+            this.btnDeliver.TabIndex = 8;
+            this.btnDeliver.Text = "Deliver";
+            this.btnDeliver.UseVisualStyleBackColor = true;
+            this.btnDeliver.Click += new System.EventHandler(this.btnDeliver_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 230);
+            this.dataGridView1.Location = new System.Drawing.Point(10, 204);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 33;
             this.dataGridView1.Size = new System.Drawing.Size(1391, 425);
-            this.dataGridView1.TabIndex = 3;
+            this.dataGridView1.TabIndex = 7;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // btnBorrow
+            // txtKey
             // 
-            this.btnBorrow.Location = new System.Drawing.Point(811, 687);
-            this.btnBorrow.Name = "btnBorrow";
-            this.btnBorrow.Size = new System.Drawing.Size(209, 51);
-            this.btnBorrow.TabIndex = 4;
-            this.btnBorrow.Text = "Borrow";
-            this.btnBorrow.UseVisualStyleBackColor = true;
-            this.btnBorrow.Click += new System.EventHandler(this.btnBorrow_Click);
+            this.txtKey.Location = new System.Drawing.Point(553, 119);
+            this.txtKey.Name = "txtKey";
+            this.txtKey.Size = new System.Drawing.Size(374, 31);
+            this.txtKey.TabIndex = 6;
+            this.txtKey.TextChanged += new System.EventHandler(this.txtKey_TextChanged);
             // 
-            // SearchInterface
+            // lblKey
+            // 
+            this.lblKey.AutoSize = true;
+            this.lblKey.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblKey.Location = new System.Drawing.Point(372, 119);
+            this.lblKey.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblKey.Name = "lblKey";
+            this.lblKey.Size = new System.Drawing.Size(134, 32);
+            this.lblKey.TabIndex = 5;
+            this.lblKey.Text = "Search key:";
+            // 
+            // BorrowedBooks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1415, 832);
-            this.Controls.Add(this.btnBorrow);
+            this.ClientSize = new System.Drawing.Size(1413, 832);
+            this.Controls.Add(this.btnDeliver);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtKey);
             this.Controls.Add(this.lblKey);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "SearchInterface";
-            this.Text = "SearchInterface";
+            this.Name = "BorrowedBooks";
+            this.Text = "BarrowedBooks";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -101,9 +100,9 @@ namespace LibraryManagementSystemProject
 
         #endregion
 
-        private System.Windows.Forms.Label lblKey;
-        private System.Windows.Forms.TextBox txtKey;
+        private System.Windows.Forms.Button btnDeliver;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btnBorrow;
+        private System.Windows.Forms.TextBox txtKey;
+        private System.Windows.Forms.Label lblKey;
     }
 }

@@ -12,39 +12,37 @@ using MongoDB.Bson;
 
 namespace LibraryManagementSystemProject
 {
-    public partial class SearchInterface : Form
+    public partial class BorrowedBooks : Form
     {
         static MongoClient m_Client = new MongoClient("mongodb+srv://ozikill123:4584@maincluster.kfxqf.mongodb.net/?retryWrites=true&w=majority");
         static IMongoDatabase m_Database = m_Client.GetDatabase("LibraryInformation");
-        static IMongoCollection <Book> m_Collection = m_Database.GetCollection<Book>("Book");
-        public SearchInterface()
+        static IMongoCollection<BorrowedBook> m_Collection = m_Database.GetCollection<BorrowedBook>("BorrowedBooks");
+        public void ReadAllDocuments()
+        {
+            List<BorrowedBook> list = m_Collection.AsQueryable().ToList<BorrowedBook>();
+            dataGridView1.DataSource = list;
+        }
+        public BorrowedBooks()
         {
             InitializeComponent();
             ReadAllDocuments();
         }
 
-        public void ReadAllDocuments()
-        {
-            List<Book> list = m_Collection.AsQueryable().ToList<Book>();
-            dataGridView1.DataSource = list;
-        }
-
         public async Task FillWithMatchingRecords()
         {
-            List<Book> bookList = new List<Book>();
+            List<BorrowedBook> bookList = new List<BorrowedBook>();
             var documents = await m_Collection.Find(_ => true).ToListAsync();
             foreach (var book in documents)
             {
                 if (txtKey.Text == "")
                 {
-                    bookList = m_Collection.AsQueryable().ToList<Book>();
+                    bookList = m_Collection.AsQueryable().ToList<BorrowedBook>();
                     dataGridView1.DataSource = bookList;
                 }
                 else
                 {
-                    if (book.ISBN.ToString() == txtKey.Text || book.Edition.ToString() == txtKey.Text || book.PageCount.ToString() == txtKey.Text || book.Title.ToString() == txtKey.Text ||
-                   book.PublishYear.Year.ToString() == txtKey.Text || book.Language.ToString() == txtKey.Text || book.PublisherName.ToString() == txtKey.Text ||
-                   book.AuthorName.ToString() == txtKey.Text || book.EditorName.ToString() == txtKey.Text || book.StockCount.ToString() == txtKey.Text)
+                    if (book.BorrowerName.ToString() == txtKey.Text || book.BorrowerSurname.ToString() == txtKey.Text || book.BorrowerLibraryId.ToString() == txtKey.Text || 
+                        book.BorrowedBookId.ToString() == txtKey.Text || book.BorrowDate.Year.ToString() == txtKey.Text  )
                     {
                         bookList.Add(book);
                     }
@@ -57,41 +55,26 @@ namespace LibraryManagementSystemProject
 
         private void txtKey_TextChanged(object sender, EventArgs e)
         {
-            if (txtKey.Text != null )
+            if (txtKey.Text != null)
             {
                 FillWithMatchingRecords();
             }
         }
-        
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            int rowindex = dataGridView1.CurrentCell.RowIndex;
-            if (dataGridView1.Rows[rowindex].Cells[10].Value.ToString() == "0")
-            {
-                btnBorrow.Enabled = false;
-                
-            }
-            else
-            {
-                btnBorrow.Enabled = true;
-            }
-            
+
         }
 
-        private void btnBorrow_Click(object sender, EventArgs e)
+        private void btnDeliver_Click(object sender, EventArgs e)
         {
+
             int rowindex = dataGridView1.CurrentCell.RowIndex;
             string id = dataGridView1.Rows[rowindex].Cells[0].Value.ToString();
 
-            BorrowBook borrowBook = new BorrowBook(id);
-            borrowBook.Show();
+            DeliverBook deliverBook = new DeliverBook(id);
+            deliverBook.Show();
             this.Hide();
-        }
-
-        private void lblKey_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

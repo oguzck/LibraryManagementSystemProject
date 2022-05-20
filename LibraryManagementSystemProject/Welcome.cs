@@ -35,7 +35,7 @@ namespace LibraryManagementSystemProject
 
         private void btnBorrowedBooks_Click(object sender, EventArgs e)
         {
-            loadForm(new BarrowedBooks());
+            loadForm(new BorrowedBooks());
         }
 
         private void btnAdminPanel_Click(object sender, EventArgs e)
