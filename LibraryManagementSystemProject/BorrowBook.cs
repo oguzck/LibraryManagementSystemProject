@@ -76,21 +76,28 @@ namespace LibraryManagementSystemProject
                 borrowedBook.BorrowerLibraryId = txtLibraryId.Text;
                 borrowedBook.BorrowDate = dateBorrowdate.Value;
 
-                selectedBook.StockCount -= 1;
-                var updateDef = Builders<Book>.Update.Set("AuthorName", selectedBook.AuthorName)
-                                                 .Set("Edition", selectedBook.Edition)
-                                                 .Set("EditorName", selectedBook.EditorName)
-                                                 .Set("ISBN", selectedBook.ISBN)
-                                                 .Set("Language", selectedBook.Language)
-                                                 .Set("PageCount", selectedBook.PageCount)
-                                                 .Set("PublisherName", selectedBook.PublisherName)
-                                                 .Set("PublishYear", selectedBook.PublishYear)
-                                                 .Set("StockCount", Convert.ToInt32(selectedBook.StockCount))
-                                                 .Set("Title", selectedBook.Title);
-                m_Collection.UpdateOne(b => b._id == selectedBook._id, updateDef);
+                if (selectedBook.StockCount>0)
+                {
+                    selectedBook.StockCount -= 1;
+                    var updateDef = Builders<Book>.Update.Set("AuthorName", selectedBook.AuthorName)
+                                                .Set("Edition", selectedBook.Edition)
+                                                .Set("EditorName", selectedBook.EditorName)
+                                                .Set("ISBN", selectedBook.ISBN)
+                                                .Set("Language", selectedBook.Language)
+                                                .Set("PageCount", selectedBook.PageCount)
+                                                .Set("PublisherName", selectedBook.PublisherName)
+                                                .Set("PublishYear", selectedBook.PublishYear)
+                                                .Set("StockCount", Convert.ToInt32(selectedBook.StockCount))
+                                                .Set("Title", selectedBook.Title);
+                    m_Collection.UpdateOne(b => b._id == selectedBook._id, updateDef);
 
-                m_Collection_borrowed.InsertOne(borrowedBook);
-                MessageBox.Show("Book borrowed");
+                    m_Collection_borrowed.InsertOne(borrowedBook);
+                    MessageBox.Show("Book borrowed");
+                }
+                else
+                {
+                    MessageBox.Show("There is no stock available");
+                }
                 
             }
         }

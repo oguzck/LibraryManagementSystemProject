@@ -78,11 +78,18 @@ namespace LibraryManagementSystemProject
 
         private void btnDeliver_Click(object sender, EventArgs e)
         {
-
+            if(dataGridView1.CurrentCell is not null) { 
             int rowindex = dataGridView1.CurrentCell.RowIndex;
             string id = dataGridView1.Rows[rowindex].Cells[0].Value.ToString();
-
             loadForm(new DeliverBook(id));
+            }
+            else
+            {
+                MessageBox.Show("Please Select A Book To Deliver");
+            }
+
+            
+
            
         }
     }

@@ -96,8 +96,8 @@ namespace LibraryManagementSystemProject
 
             m_Collection.DeleteOne(b => b._id == borrowedBook._id);
             MessageBox.Show("Book delivered");
-            this.Hide();
-            
+            loadForm(new BorrowedBooks());
+
         }
         public void loadForm(object Form)
         {

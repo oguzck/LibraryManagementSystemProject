@@ -69,170 +69,190 @@ namespace LibraryManagementSystemProject
             // 
             // txtObjectId
             // 
-            this.txtObjectId.Location = new System.Drawing.Point(112, 105);
+            this.txtObjectId.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtObjectId.Location = new System.Drawing.Point(206, 211);
             this.txtObjectId.Name = "txtObjectId";
             this.txtObjectId.ReadOnly = true;
-            this.txtObjectId.Size = new System.Drawing.Size(155, 23);
+            this.txtObjectId.Size = new System.Drawing.Size(155, 22);
             this.txtObjectId.TabIndex = 51;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(67, 113);
+            this.label13.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label13.Location = new System.Drawing.Point(161, 219);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(26, 15);
+            this.label13.Size = new System.Drawing.Size(27, 19);
             this.label13.TabIndex = 50;
             this.label13.Text = "Id : ";
             // 
             // dtpPublishYear
             // 
-            this.dtpPublishYear.Location = new System.Drawing.Point(613, 147);
+            this.dtpPublishYear.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpPublishYear.Location = new System.Drawing.Point(707, 253);
             this.dtpPublishYear.Name = "dtpPublishYear";
-            this.dtpPublishYear.Size = new System.Drawing.Size(149, 23);
+            this.dtpPublishYear.Size = new System.Drawing.Size(149, 22);
             this.dtpPublishYear.TabIndex = 49;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(40, 233);
+            this.label11.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.Location = new System.Drawing.Point(134, 339);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(65, 15);
+            this.label11.Size = new System.Drawing.Size(69, 19);
             this.label11.TabIndex = 48;
             this.label11.Text = "Publisher : ";
             // 
             // txtEdition
             // 
-            this.txtEdition.Location = new System.Drawing.Point(612, 188);
+            this.txtEdition.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtEdition.Location = new System.Drawing.Point(706, 294);
             this.txtEdition.Name = "txtEdition";
             this.txtEdition.ReadOnly = true;
-            this.txtEdition.Size = new System.Drawing.Size(150, 23);
+            this.txtEdition.Size = new System.Drawing.Size(150, 22);
             this.txtEdition.TabIndex = 47;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(529, 150);
+            this.label10.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(623, 256);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(77, 15);
+            this.label10.Size = new System.Drawing.Size(81, 19);
             this.label10.TabIndex = 46;
             this.label10.Text = "Publish Year :";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(546, 113);
+            this.label9.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(640, 219);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(45, 15);
+            this.label9.Size = new System.Drawing.Size(47, 19);
             this.label9.TabIndex = 45;
             this.label9.Text = "Stock : ";
             // 
             // txtStock
             // 
-            this.txtStock.Location = new System.Drawing.Point(612, 105);
+            this.txtStock.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtStock.Location = new System.Drawing.Point(706, 211);
             this.txtStock.Name = "txtStock";
             this.txtStock.ReadOnly = true;
-            this.txtStock.Size = new System.Drawing.Size(150, 23);
+            this.txtStock.Size = new System.Drawing.Size(150, 22);
             this.txtStock.TabIndex = 44;
             // 
             // txtEditor
             // 
-            this.txtEditor.Location = new System.Drawing.Point(367, 188);
+            this.txtEditor.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtEditor.Location = new System.Drawing.Point(461, 294);
             this.txtEditor.Name = "txtEditor";
             this.txtEditor.ReadOnly = true;
-            this.txtEditor.Size = new System.Drawing.Size(144, 23);
+            this.txtEditor.Size = new System.Drawing.Size(144, 22);
             this.txtEditor.TabIndex = 43;
             // 
             // txtLanguage
             // 
-            this.txtLanguage.Location = new System.Drawing.Point(367, 147);
+            this.txtLanguage.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtLanguage.Location = new System.Drawing.Point(461, 253);
             this.txtLanguage.Name = "txtLanguage";
             this.txtLanguage.ReadOnly = true;
-            this.txtLanguage.Size = new System.Drawing.Size(144, 23);
+            this.txtLanguage.Size = new System.Drawing.Size(144, 22);
             this.txtLanguage.TabIndex = 42;
             // 
             // txtPageCount
             // 
-            this.txtPageCount.Location = new System.Drawing.Point(367, 105);
+            this.txtPageCount.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtPageCount.Location = new System.Drawing.Point(461, 211);
             this.txtPageCount.Name = "txtPageCount";
             this.txtPageCount.ReadOnly = true;
-            this.txtPageCount.Size = new System.Drawing.Size(144, 23);
+            this.txtPageCount.Size = new System.Drawing.Size(144, 22);
             this.txtPageCount.TabIndex = 41;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(529, 191);
+            this.label8.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(623, 297);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(53, 15);
+            this.label8.Size = new System.Drawing.Size(53, 19);
             this.label8.TabIndex = 40;
             this.label8.Text = "Edition : ";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(283, 191);
+            this.label7.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(377, 297);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(47, 15);
+            this.label7.Size = new System.Drawing.Size(48, 19);
             this.label7.TabIndex = 39;
             this.label7.Text = "Editor : ";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(283, 150);
+            this.label6.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(377, 256);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 15);
+            this.label6.Size = new System.Drawing.Size(70, 19);
             this.label6.TabIndex = 38;
             this.label6.Text = "Language : ";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(283, 113);
+            this.label5.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(377, 219);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 15);
+            this.label5.Size = new System.Drawing.Size(78, 19);
             this.label5.TabIndex = 37;
             this.label5.Text = "Page Count : ";
             // 
             // txtISBN
             // 
-            this.txtISBN.Location = new System.Drawing.Point(367, 230);
+            this.txtISBN.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtISBN.Location = new System.Drawing.Point(461, 336);
             this.txtISBN.Name = "txtISBN";
             this.txtISBN.ReadOnly = true;
-            this.txtISBN.Size = new System.Drawing.Size(144, 23);
+            this.txtISBN.Size = new System.Drawing.Size(144, 22);
             this.txtISBN.TabIndex = 36;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(283, 233);
+            this.label4.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(377, 339);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 15);
+            this.label4.Size = new System.Drawing.Size(42, 19);
             this.label4.TabIndex = 35;
             this.label4.Text = "ISBN : ";
             // 
             // txtPublisher
             // 
-            this.txtPublisher.Location = new System.Drawing.Point(112, 230);
+            this.txtPublisher.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtPublisher.Location = new System.Drawing.Point(206, 336);
             this.txtPublisher.Name = "txtPublisher";
             this.txtPublisher.ReadOnly = true;
-            this.txtPublisher.Size = new System.Drawing.Size(155, 23);
+            this.txtPublisher.Size = new System.Drawing.Size(155, 22);
             this.txtPublisher.TabIndex = 34;
             // 
             // txtAuthor
             // 
-            this.txtAuthor.Location = new System.Drawing.Point(112, 189);
+            this.txtAuthor.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtAuthor.Location = new System.Drawing.Point(206, 295);
             this.txtAuthor.Name = "txtAuthor";
             this.txtAuthor.ReadOnly = true;
-            this.txtAuthor.Size = new System.Drawing.Size(155, 23);
+            this.txtAuthor.Size = new System.Drawing.Size(155, 22);
             this.txtAuthor.TabIndex = 33;
             // 
             // txtTitle
             // 
-            this.txtTitle.Location = new System.Drawing.Point(112, 147);
+            this.txtTitle.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtTitle.Location = new System.Drawing.Point(206, 253);
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.ReadOnly = true;
-            this.txtTitle.Size = new System.Drawing.Size(155, 23);
+            this.txtTitle.Size = new System.Drawing.Size(155, 22);
             this.txtTitle.TabIndex = 32;
             // 
             // label3
@@ -247,20 +267,22 @@ namespace LibraryManagementSystemProject
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(40, 192);
+            this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(134, 298);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label2.Size = new System.Drawing.Size(53, 15);
+            this.label2.Size = new System.Drawing.Size(54, 19);
             this.label2.TabIndex = 30;
             this.label2.Text = "Author : ";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(55, 150);
+            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(149, 256);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(38, 15);
+            this.label1.Size = new System.Drawing.Size(41, 19);
             this.label1.TabIndex = 29;
             this.label1.Text = "Title : ";
             // 
@@ -268,7 +290,7 @@ namespace LibraryManagementSystemProject
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(328, 23);
+            this.label12.Location = new System.Drawing.Point(422, 129);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(114, 29);
             this.label12.TabIndex = 52;
@@ -277,56 +299,63 @@ namespace LibraryManagementSystemProject
             // lblBorrowerName
             // 
             this.lblBorrowerName.AutoSize = true;
-            this.lblBorrowerName.Location = new System.Drawing.Point(40, 320);
+            this.lblBorrowerName.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblBorrowerName.Location = new System.Drawing.Point(134, 426);
             this.lblBorrowerName.Name = "lblBorrowerName";
-            this.lblBorrowerName.Size = new System.Drawing.Size(99, 15);
+            this.lblBorrowerName.Size = new System.Drawing.Size(100, 19);
             this.lblBorrowerName.TabIndex = 54;
             this.lblBorrowerName.Text = "Borrower Name : ";
             // 
             // txtBorrowerName
             // 
-            this.txtBorrowerName.Location = new System.Drawing.Point(167, 316);
+            this.txtBorrowerName.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtBorrowerName.Location = new System.Drawing.Point(261, 422);
             this.txtBorrowerName.Name = "txtBorrowerName";
-            this.txtBorrowerName.Size = new System.Drawing.Size(155, 23);
+            this.txtBorrowerName.Size = new System.Drawing.Size(155, 22);
             this.txtBorrowerName.TabIndex = 53;
             // 
             // lblBorrowerSurname
             // 
             this.lblBorrowerSurname.AutoSize = true;
-            this.lblBorrowerSurname.Location = new System.Drawing.Point(40, 358);
+            this.lblBorrowerSurname.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblBorrowerSurname.Location = new System.Drawing.Point(134, 464);
             this.lblBorrowerSurname.Name = "lblBorrowerSurname";
-            this.lblBorrowerSurname.Size = new System.Drawing.Size(114, 15);
+            this.lblBorrowerSurname.Size = new System.Drawing.Size(119, 19);
             this.lblBorrowerSurname.TabIndex = 56;
             this.lblBorrowerSurname.Text = "Borrower Surname : ";
             // 
             // txtBorrowerSurname
             // 
-            this.txtBorrowerSurname.Location = new System.Drawing.Point(167, 354);
+            this.txtBorrowerSurname.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtBorrowerSurname.Location = new System.Drawing.Point(261, 460);
             this.txtBorrowerSurname.Name = "txtBorrowerSurname";
-            this.txtBorrowerSurname.Size = new System.Drawing.Size(155, 23);
+            this.txtBorrowerSurname.Size = new System.Drawing.Size(155, 22);
             this.txtBorrowerSurname.TabIndex = 55;
             // 
             // dateBorrowdate
             // 
-            this.dateBorrowdate.Location = new System.Drawing.Point(512, 356);
+            this.dateBorrowdate.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dateBorrowdate.Location = new System.Drawing.Point(606, 462);
             this.dateBorrowdate.MaxDate = new System.DateTime(2023, 12, 31, 0, 0, 0, 0);
             this.dateBorrowdate.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             this.dateBorrowdate.Name = "dateBorrowdate";
-            this.dateBorrowdate.Size = new System.Drawing.Size(149, 23);
+            this.dateBorrowdate.Size = new System.Drawing.Size(149, 22);
             this.dateBorrowdate.TabIndex = 58;
             // 
             // lblBorrowDate
             // 
             this.lblBorrowDate.AutoSize = true;
-            this.lblBorrowDate.Location = new System.Drawing.Point(367, 360);
+            this.lblBorrowDate.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblBorrowDate.Location = new System.Drawing.Point(461, 466);
             this.lblBorrowDate.Name = "lblBorrowDate";
-            this.lblBorrowDate.Size = new System.Drawing.Size(75, 15);
+            this.lblBorrowDate.Size = new System.Drawing.Size(77, 19);
             this.lblBorrowDate.TabIndex = 57;
             this.lblBorrowDate.Text = "Borrow Date:";
             // 
             // btnBorrow
             // 
-            this.btnBorrow.Location = new System.Drawing.Point(515, 403);
+            this.btnBorrow.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnBorrow.Location = new System.Drawing.Point(609, 509);
             this.btnBorrow.Name = "btnBorrow";
             this.btnBorrow.Size = new System.Drawing.Size(144, 25);
             this.btnBorrow.TabIndex = 59;
@@ -337,22 +366,25 @@ namespace LibraryManagementSystemProject
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(362, 318);
+            this.label14.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label14.Location = new System.Drawing.Point(456, 424);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(116, 15);
+            this.label14.Size = new System.Drawing.Size(120, 19);
             this.label14.TabIndex = 61;
             this.label14.Text = "Borrower Library Id : ";
             // 
             // txtLibraryId
             // 
-            this.txtLibraryId.Location = new System.Drawing.Point(505, 316);
+            this.txtLibraryId.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtLibraryId.Location = new System.Drawing.Point(599, 422);
             this.txtLibraryId.Name = "txtLibraryId";
-            this.txtLibraryId.Size = new System.Drawing.Size(155, 23);
+            this.txtLibraryId.Size = new System.Drawing.Size(155, 22);
             this.txtLibraryId.TabIndex = 60;
             // 
             // btnReturn
             // 
-            this.btnReturn.Location = new System.Drawing.Point(177, 403);
+            this.btnReturn.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnReturn.Location = new System.Drawing.Point(271, 509);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(144, 25);
             this.btnReturn.TabIndex = 62;
@@ -362,6 +394,7 @@ namespace LibraryManagementSystemProject
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.Info;
             this.panel1.Controls.Add(this.txtPageCount);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.btnReturn);
@@ -399,7 +432,7 @@ namespace LibraryManagementSystemProject
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(823, 491);
+            this.panel1.Size = new System.Drawing.Size(967, 617);
             this.panel1.TabIndex = 63;
             // 
             // BorrowBook
@@ -407,9 +440,9 @@ namespace LibraryManagementSystemProject
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BorrowBook";
-            this.Size = new System.Drawing.Size(823, 491);
+            this.Size = new System.Drawing.Size(967, 617);
             this.Load += new System.EventHandler(this.BorrowBook_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

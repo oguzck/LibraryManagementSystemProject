@@ -41,6 +41,7 @@ namespace LibraryManagementSystemProject
             // 
             // pnlMain
             // 
+            this.pnlMain.BackColor = System.Drawing.SystemColors.Info;
             this.pnlMain.Controls.Add(this.label1);
             this.pnlMain.Controls.Add(this.btnLogin);
             this.pnlMain.Controls.Add(this.txtPassword);
@@ -56,18 +57,19 @@ namespace LibraryManagementSystemProject
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(424, 130);
+            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(434, 134);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
+            this.label1.Size = new System.Drawing.Size(67, 33);
             this.label1.TabIndex = 11;
-            this.label1.Text = "label1";
+            this.label1.Text = "Log in";
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(470, 377);
+            this.btnLogin.Location = new System.Drawing.Point(434, 372);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(78, 20);
+            this.btnLogin.Size = new System.Drawing.Size(106, 27);
             this.btnLogin.TabIndex = 10;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -79,7 +81,7 @@ namespace LibraryManagementSystemProject
             this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(144, 23);
+            this.txtPassword.Size = new System.Drawing.Size(177, 23);
             this.txtPassword.TabIndex = 9;
             // 
             // lblPassword
@@ -97,7 +99,7 @@ namespace LibraryManagementSystemProject
             this.txtUsername.Location = new System.Drawing.Point(405, 254);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(144, 23);
+            this.txtUsername.Size = new System.Drawing.Size(177, 23);
             this.txtUsername.TabIndex = 7;
             // 
             // lblUsername

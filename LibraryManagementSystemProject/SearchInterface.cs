@@ -90,15 +90,16 @@ namespace LibraryManagementSystemProject
 
         private void btnBorrow_Click(object sender, EventArgs e)
         {
+            if(dataGridView1.CurrentCell is not null) { 
             int rowindex = dataGridView1.CurrentCell.RowIndex;
             string id = dataGridView1.Rows[rowindex].Cells[0].Value.ToString();
 
             loadForm(new BorrowBook(id));
-        }
-
-        private void lblKey_Click(object sender, EventArgs e)
-        {
-
+            }
+            else
+            {
+                MessageBox.Show("Please Select a Book to Borrow");
+            }
         }
     }
 }
