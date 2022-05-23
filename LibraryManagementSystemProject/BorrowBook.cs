@@ -12,7 +12,7 @@ using MongoDB.Bson;
 
 namespace LibraryManagementSystemProject
 {
-    public partial class BorrowBook : Form
+    public partial class BorrowBook : UserControl
     {
         static Book selectedBook = new Book();
         static MongoClient m_Client = new MongoClient("mongodb+srv://ozikill123:4584@maincluster.kfxqf.mongodb.net/?retryWrites=true&w=majority");

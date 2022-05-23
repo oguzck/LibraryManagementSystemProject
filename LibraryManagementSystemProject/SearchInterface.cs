@@ -62,7 +62,16 @@ namespace LibraryManagementSystemProject
                 FillWithMatchingRecords();
             }
         }
-        
+        public void loadForm(UserControl userControl)
+        {
+
+            userControl.Dock = DockStyle.Fill;
+            panel1.Controls.Clear();
+            panel1.Controls.Add(userControl);
+            userControl.BringToFront();
+
+
+        }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -84,9 +93,7 @@ namespace LibraryManagementSystemProject
             int rowindex = dataGridView1.CurrentCell.RowIndex;
             string id = dataGridView1.Rows[rowindex].Cells[0].Value.ToString();
 
-            BorrowBook borrowBook = new BorrowBook(id);
-            borrowBook.Show();
-            this.Hide();
+            loadForm(new BorrowBook(id));
         }
 
         private void lblKey_Click(object sender, EventArgs e)

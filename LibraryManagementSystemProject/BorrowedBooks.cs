@@ -52,6 +52,16 @@ namespace LibraryManagementSystemProject
             dataGridView1.DataSource = bookList;
 
         }
+        public void loadForm(UserControl userControl)
+        {
+
+            userControl.Dock = DockStyle.Fill;
+            panel1.Controls.Clear();
+            panel1.Controls.Add(userControl);
+            userControl.BringToFront();
+
+
+        }
 
         private void txtKey_TextChanged(object sender, EventArgs e)
         {
@@ -72,9 +82,8 @@ namespace LibraryManagementSystemProject
             int rowindex = dataGridView1.CurrentCell.RowIndex;
             string id = dataGridView1.Rows[rowindex].Cells[0].Value.ToString();
 
-            DeliverBook deliverBook = new DeliverBook(id);
-            deliverBook.Show();
-            this.Hide();
+            loadForm(new DeliverBook(id));
+           
         }
     }
 }

@@ -12,7 +12,7 @@ using MongoDB.Bson;
 
 namespace LibraryManagementSystemProject
 {
-    public partial class DeliverBook : Form
+    public partial class DeliverBook : UserControl
     {
         Book selectedBook = new Book();
         BorrowedBook borrowedBook = new BorrowedBook();
