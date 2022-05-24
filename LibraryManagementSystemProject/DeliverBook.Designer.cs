@@ -365,6 +365,7 @@ namespace LibraryManagementSystemProject
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.Info;
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.btnReturn);
             this.panel1.Controls.Add(this.label1);
@@ -410,7 +411,7 @@ namespace LibraryManagementSystemProject
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "DeliverBook";
             this.Size = new System.Drawing.Size(881, 499);
             this.Load += new System.EventHandler(this.DeliverBook_Load);

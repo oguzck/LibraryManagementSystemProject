@@ -342,6 +342,7 @@ namespace LibraryManagementSystemProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Info;
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.txtObjectId);
             this.Controls.Add(this.label13);
